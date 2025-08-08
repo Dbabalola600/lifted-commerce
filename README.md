@@ -1,104 +1,98 @@
-# Lifted Horizon: Modern E-commerce Frontend
+# HorizonHub: A Modern E-commerce Experience
 
-Lifted Horizon is a cutting-edge, responsive e-commerce frontend application designed to deliver a seamless shopping experience. Built with a focus on performance and modern UI/UX principles, it features dynamic product displays, a fully functional shopping cart, robust search capabilities, and user authentication. This project showcases a strong command of React, TypeScript, and contemporary web development practices. ✨
+## Overview
+HorizonHub is a sleek and responsive e-commerce front-end application meticulously crafted to deliver an intuitive and visually appealing shopping journey. Built with React and TypeScript, it leverages the power of Vite for a lightning-fast development experience and Tailwind CSS for utility-first styling.
 
-## Installation 📦
+## Features
+*   🛍️ **Intuitive Product Catalog**: Browse a wide array of products with detailed listings.
+*   🔎 **Advanced Filtering & Sorting**: Easily discover products by category, apply search terms, and sort by price or rating.
+*   🛒 **Seamless Cart Management**: Add, update, and remove items from your shopping cart with real-time quantity adjustments and total calculations.
+*   💖 **Wishlist Functionality**: Mark your favorite products for quick access.
+*   👤 **Mock User Authentication**: Simulate user sign-in and sign-up flows (frontend only).
+*   📱 **Responsive Design**: Enjoy a consistent experience across all devices, from desktops to mobile phones.
+*   ⚡ **Optimized Performance**: Built with Vite for fast loading times and efficient development.
 
--   **Clone the Repository:**
+## Getting Started
 
-    ```bash
-    git clone https://github.com/Dbabalola600/lifted-commerce.git
-    cd lifted-commerce
-    ```
+To get HorizonHub up and running on your local machine, follow these simple steps.
 
--   **Install Dependencies:**
+### Installation
 
-    ```bash
-    npm install
-    # or yarn install
-    ```
+✨ **Clone the Repository**:
+```bash
+git clone https://github.com/Dbabalola600/lifted-commerce.git
+cd lifted-commerce
+```
 
--   **Run the Development Server:** 🚀
+📦 **Install Dependencies**:
+```bash
+npm install
+# or yarn install
+# or pnpm install
+```
 
-    ```bash
-    npm run dev
-    # or yarn dev
-    ```
+### Environment Variables
+This project does not require any specific environment variables as it is a pure frontend application and relies on mocked data.
 
-    The application will be accessible at `http://localhost:5173` (or another port as indicated by Vite).
+## Usage
 
-## Usage 🖥️
+Once the project dependencies are installed, you can start the development server or build the application for production.
 
-Once the development server is running, you can interact with the Lifted Horizon application through your web browser.
+🚀 **Start the Development Server**:
+```bash
+npm run dev
+```
+This command will open the application in your browser, typically at `http://localhost:5173`. The development server supports hot module replacement for a smooth development workflow.
 
-**Browsing Products:**
-The landing page displays a grid of featured products. You can switch between grid and list views, filter products by category, and sort them by name, price, or rating using the controls above the product display.
-
-**Searching for Products:**
-Use the integrated search bar to find specific products. You can type keywords and select a category for a more refined search. The search bar also provides popular search suggestions when focused.
-
-**Adding to Cart:**
-Click the "Add to Cart" button on any product card to add items to your shopping cart. The cart icon in the header will dynamically update with the total number of items. Click the floating cart button at the bottom right of the screen to view and manage your cart.
-
-**Managing Your Cart:**
-Inside the cart sidebar, you have full control: easily adjust the quantity of each item using the increment/decrement buttons or remove items entirely from your cart. The total price will update dynamically as you make changes.
-
-**User Authentication:**
-Click "Sign In" or "Sign Up" in the header to open the authentication modal. New users can register, and existing users can log in (a mock authentication system is implemented for frontend demonstration purposes).
-
-**Product Favorites:**
-Click the heart icon on any product card to effortlessly add or remove it from your personal favorites list.
-
-## Features ✨
-
--   **Dynamic Product Display**: Browse an extensive collection of products presented in a responsive grid or list view, complete with high-quality images, clear pricing, user ratings, and detailed descriptions.
--   **Advanced Filtering & Sorting**: Easily filter products by category and sort them by name, price (low to high/high to low), or rating to effortlessly find exactly what you're looking for.
--   **Interactive Shopping Cart**: A fully functional shopping cart allows you to add, remove, and update quantities of items with real-time total calculation.
--   **User Authentication System**: Secure Sign In and Sign Up functionality via a clean, intuitive modal interface (mock authentication is in place for robust frontend demonstration).
--   **Product Favorites**: Keep track of your desired items by marking and unmarking products as favorites for quick and easy access later.
--   **Integrated Search Bar**: An efficient search bar enables quick product discovery by keywords, with the option to refine results using category selection and popular search suggestions.
--   **Responsive Design**: A meticulously crafted, fluid, and adaptive user interface ensures a consistent and enjoyable shopping experience across all devices, from mobile phones to large desktop screens.
--   **Modern Tech Stack**: Leverages the power of React 19, TypeScript, Vite, and Tailwind CSS for a highly performant, scalable, and maintainable codebase.
+📦 **Build for Production**:
+```bash
+npm run build
+```
+This command compiles the application into static files optimized for production, which will be placed in the `dist` directory. You can then serve these files using any static file server.
 
 ## Technologies Used
 
-| Technology       | Description                                                 | Link                                                |
-| :--------------- | :---------------------------------------------------------- | :-------------------------------------------------- |
-| **React**        | A JavaScript library for building dynamic user interfaces.  | [react.dev](https://react.dev/)                     |
-| **TypeScript**   | A strongly typed superset of JavaScript that compiles to plain JavaScript. | [typescriptlang.org](https://www.typescriptlang.org/) |
-| **Vite**         | A next-generation frontend tooling that provides a blazing fast development experience. | [vitejs.dev](https://vitejs.dev/)                   |
-| **Tailwind CSS** | A utility-first CSS framework for rapidly building custom designs. | [tailwindcss.com](https://tailwindcss.com/)         |
-| **ESLint**       | A pluggable linter tool for identifying and reporting on patterns in JavaScript code. | [eslint.org](https://eslint.org/)                   |
-| **Lucide React** | A collection of beautiful and customizable open-source icons for React projects. | [lucide.dev](https://lucide.dev/)                   |
+HorizonHub is built with a modern web development stack:
 
-## Contributing 🤝
+| Technology         | Description                                     | Link                                       |
+| :----------------- | :---------------------------------------------- | :----------------------------------------- |
+| **React**          | A declarative, efficient, and flexible JavaScript library for building user interfaces. | [React Official Site](https://react.dev/)  |
+| **TypeScript**     | A strongly typed superset of JavaScript that compiles to plain JavaScript. | [TypeScript Official Site](https://www.typescriptlang.org/) |
+| **Vite**           | A next-generation frontend tooling that provides an extremely fast development experience. | [Vite Official Site](https://vitejs.dev/)   |
+| **Tailwind CSS**   | A utility-first CSS framework for rapidly building custom designs. | [Tailwind CSS Official Site](https://tailwindcss.com/) |
+| **Lucide React**   | A set of beautiful and customizable open-source icons for React. | [Lucide React](https://lucide.dev/icons/) |
+| **ESLint**         | Pluggable and configurable linter tool for identifying and reporting on patterns in JavaScript code. | [ESLint Official Site](https://eslint.org/) |
+| **PostCSS**        | A tool for transforming CSS with JavaScript.   | [PostCSS Official Site](https://postcss.org/) |
 
-Contributions are highly valued and welcome! If you'd like to contribute to Lifted Horizon, please follow these guidelines:
+## Contributing
 
--   **Fork the repository.**
--   **Clone your forked repository:**
-    ```bash
-    git clone https://github.com/your-username/lifted-commerce.git
-    cd lifted-commerce
-    ```
--   **Create a new branch** for your feature or bug fix:
-    ```bash
-    git checkout -b feature/your-feature-name
-    ```
--   **Make your changes** and ensure they adhere to the project's coding style (ESLint is configured to assist). ⚙️
--   **Commit your changes** with a clear, concise, and descriptive message. ✨
--   **Push your branch** to your forked repository.
--   **Open a Pull Request** to the `main` branch of this repository, providing a detailed description of your changes and why they were made.
+We welcome contributions to HorizonHub! If you have suggestions for improvements or new features, please follow these guidelines:
+
+1.  🍴 **Fork the Repository**: Start by forking the `lifted-commerce` repository to your GitHub account.
+2.  🌿 **Create a New Branch**: Create a dedicated branch for your feature or bug fix:
+    `git checkout -b feature/your-feature-name`
+    or `git checkout -b bugfix/issue-description`
+3.  ⚙️ **Make Your Changes**: Implement your changes and ensure they adhere to the project's coding style.
+4.  🧪 **Test Your Changes**: Before submitting, test your changes thoroughly to prevent regressions.
+5.  ➕ **Commit Your Work**: Commit your changes with a clear and concise message.
+6.  ⬆️ **Push to Your Fork**: Push your branch to your forked repository.
+7.  🤝 **Open a Pull Request**: Submit a pull request to the `main` branch of the original repository. Provide a detailed description of your changes.
 
 ## License
 
-This project is currently unlicensed.
+This project is open-source and available under the MIT License. Please note that no dedicated `LICENSE` file was found in the provided project context.
+
+## Author Info
+
+👋 Connect with the developer behind HorizonHub:
+
+*   **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/damisi-babalola-4018201b7/)
+*   **Portfolio**: [Portfolio Link](https://damisi-b-portfolio.vercel.app/)
 
 ---
 
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=eslint&logoColor=white)
-
+[![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=eslint&logoColor=white)](https://eslint.org/)

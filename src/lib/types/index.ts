@@ -28,4 +28,20 @@ export interface AppContextType {
   setCart: (cart: CartItem[]) => void;
   favorites: number[];
   setFavorites: (favorites: number[]) => void;
+  isCartOpen: boolean, 
+setCartOpen: (isOpen: boolean) => void;
+}
+
+export type ViewMode = "grid" | "list";
+
+
+export interface ProductGridProps {
+  products: Product[];
+  searchTerm: string;
+  filterCategory: string;
+  setFilterCategory: (category: string) => void;
+  sortBy: string;
+  setSortBy: (sort: string) => void;
+  viewMode: ViewMode;
+  setViewMode: (mode: ViewMode) => void;
 }

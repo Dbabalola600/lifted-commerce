@@ -1,13 +1,14 @@
 import { Search } from "lucide-react";
 import { useState } from "react";
 
-
-
-
-export const SearchBar: React.FC = () => {
-  const [searchTerm, setSearchTerm] = useState('');
+export const SearchBar: React.FC<{
+  searchTerm: string;
+  setSearchTerm: (val: string) => void;
+}> = ({ searchTerm, setSearchTerm }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
+
+  console.log("is", isExpanded)
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8 relative z-10">
       <div className="bg-white rounded-2xl shadow-2xl p-6">
@@ -24,33 +25,10 @@ export const SearchBar: React.FC = () => {
               onBlur={() => setIsExpanded(false)}
             />
           </div>
-          <select className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
-            <option>All Categories</option>
-            <option>Electronics</option>
-            <option>Fashion</option>
-            <option>Food</option>
-            <option>Home</option>
-          </select>
           <button className="bg-purple-600 text-white px-8 py-3 rounded-lg hover:bg-purple-700 transition-colors font-medium">
             Search
           </button>
         </div>
-        
-        {isExpanded && (
-          <div className="mt-4 p-4 border-t">
-            <div className="text-sm text-gray-600 mb-2">Popular searches:</div>
-            <div className="flex flex-wrap gap-2">
-              {['headphones', 'laptop', 'shoes', 'coffee', 'watch'].map((term) => (
-                <button
-                  key={term}
-                  className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm hover:bg-purple-100 hover:text-purple-700 transition-colors"
-                >
-                  {term}
-                </button>
-              ))}
-            </div>
-          </div>
-        )}
       </div>
     </div>
   );

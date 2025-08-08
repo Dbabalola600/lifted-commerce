@@ -25,8 +25,8 @@ export const AuthModal: React.FC<{ type: 'signin' | 'signup'; onClose: () => voi
     // Mock authentication
     const newUser = {
       id: Date.now(),
-      name: formData.name || formData.email.split('@')[0],
-      email: formData.email
+      name: formData?.name || formData?.email?.split('@')[0],
+      email: formData?.email
     };
 
     setUser(newUser);
